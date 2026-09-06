@@ -1,17 +1,17 @@
 # Parker & Vale Atlas
 
-Interactive Atlas experiences for Parker & Vale.
+Live public Atlas interfaces from Parker & Vale.
 
 Published at [atlas.parkerandvale.com](https://atlas.parkerandvale.com).
 
-Editorial discovery lives on the main site at [parkerandvale.com/atlas](https://parkerandvale.com/atlas).
+The product lives on the main site at [parkerandvale.com/atlas](https://parkerandvale.com/atlas).
 
-## Experiences
+## Public interfaces
 
-- `/churches/` — Church Atlas (Hot Springs)
-- `/safety/` — Safety Atlas (Hot Springs crash analysis)
-- `/tip/` — TIP Atlas (capital program explorer)
+- `/safety/` — Safety Atlas
+- `/tip/` — Corpus Christi TIP Atlas (TxDOT sample data)
 - `/ocala-tip/` — Ocala Marion TIP Atlas
+- `/churches/` — Hot Springs Church Map (studio)
 
 ## Deploy
 

@@ -652,7 +652,7 @@
     </div>
 
     <div class="sidebar-cta">
-      <a href="mailto:info@parkerandvale.com?subject=TIP Project Tracker Inquiry" class="btn-primary">Request a TIP Tracker</a>
+      <a href="https://parkerandvale.com/demo" class="btn-primary">Request a Demo</a>
       <a href="../" class="btn-secondary">View Atlas</a>
     </div>
   </aside>
@@ -878,13 +878,13 @@ const map = L.map('map', {
 
 L.control.zoom({ position: 'bottomright' }).addTo(map);
 const basemaps = {
-  light: L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-    attribution: '© <a href="https://www.openstreetmap.org/copyright">OSM</a> © <a href="https://carto.com/">CARTO</a>',
-    maxZoom: 20
+  light: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 19
   }),
-  dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-    attribution: '© <a href="https://www.openstreetmap.org/copyright">OSM</a> © <a href="https://carto.com/">CARTO</a>',
-    maxZoom: 20
+  dark: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Tiles © Esri — Esri, HERE, Garmin, FAO, NOAA, USGS',
+    maxZoom: 16
   }),
 };
 let activeBasemap = null;

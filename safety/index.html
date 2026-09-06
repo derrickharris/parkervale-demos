@@ -974,7 +974,7 @@
     <div class="sidebar-cta">
       <div class="cta-heading">Need this for your MPO?</div>
       <div class="cta-sub">We build safety maps and crash analysis dashboards for MPOs, municipalities, and grant writers across the region.</div>
-      <a href="mailto:info@parkerandvale.com?subject=Safety Map Inquiry" class="btn-primary">Request a Map →</a>
+      <a href="https://parkerandvale.com/demo" class="btn-primary">Request a Demo</a>
       <a href="../" class="btn-secondary">← View Atlas</a>
     </div>
 
@@ -1042,15 +1042,17 @@ L.control.fullscreen({ position: 'topright' }).addTo(map);
 
 // ── Basemaps ────────────────────────────────────────────────────
 const basemaps = {
-  dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-    attribution: '© <a href="https://www.openstreetmap.org/copyright">OSM</a> © <a href="https://carto.com/">CARTO</a>',
-    maxZoom: 20
+  dark: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Tiles © Esri — Esri, HERE, Garmin, FAO, NOAA, USGS',
+    maxZoom: 16
   }),
-  light: L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    attribution: '© OSM © CARTO', maxZoom: 20
+  light: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 19
   }),
   satellite: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-    attribution: '© Esri', maxZoom: 19
+    attribution: 'Tiles © Esri — Esri, Maxar, Earthstar Geographics',
+    maxZoom: 19
   })
 };
 
